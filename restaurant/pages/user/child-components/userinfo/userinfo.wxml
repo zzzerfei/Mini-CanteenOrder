@@ -1,0 +1,9 @@
+  <!-- 顶部用户信息模块 -->
+  <view class="user-top">
+    <view class="user-img">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="user-name">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>   

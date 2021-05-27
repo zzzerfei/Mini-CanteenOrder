@@ -1,0 +1,10 @@
+  <!-- 顶部用户信息模块 -->
+  <view class='server'>
+    <block wx:for="{{infos}}" wx:key="index">
+      <view bindtap="itemClick" data-index="{{index}}" class='server-item'>
+        <!-- <image class="item" src="/assets/images/user/{{item.icon}}" /> -->
+        <text>{{item.info}}</text>
+      </view>
+    </block>
+    <van-icon name="arrow" style="margin-right:5rpx"/>
+  </view>

@@ -1,0 +1,90 @@
+.dishItem {
+  background-color: #fff;
+  position: relative;
+  width: 90%;
+  margin:0 auto;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  /* border-bottom: #b2bec3 1px solid ; */
+  display: flex;
+  height: 200rpx;
+  /* box-shadow: 0px 1px 1px 1rpx rgba(99, 110, 114,0.3); */
+  box-shadow: 0 1px 2px rgb(150 150 150 / 30%)
+
+}
+/* 图片区域 */
+.img-container{
+  display: flex;
+  width: 270rpx;
+}
+.img-container>image{
+  display: block;
+  margin: 10rpx auto;
+  height: 180rpx;
+  width: 252rpx;
+  border-radius: 10rpx;
+}
+/* 详细信息 */
+.detail-container{
+  flex-grow: 1;
+  width: 220rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title{
+  display: inline-block;
+  width: 220rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.monthsale{
+  font-size: 26rpx;
+}
+.price{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.order-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 150rpx;
+  right: 10rpx;
+}
+.changeNumContainer{
+  line-height: 90rpx;
+  width: 40rpx;
+  height: 80rpx;
+}
+.count{
+  text-align: center;
+  font-size: 36rpx;
+  margin:0 10rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 40rpx;
+}
+
+.decrease{
+  position: relative;
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.addCount{
+  position: relative;
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}

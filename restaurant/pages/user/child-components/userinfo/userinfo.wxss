@@ -1,0 +1,28 @@
+/* pages/userinfo/userinfo.wxss */
+
+.user-top {
+  position: relative;
+  display: flex;
+  height: 150rpx;
+  padding: 50rpx 40rpx;
+  color: #fff;
+  background-color: #FAC239;
+}
+.user-img {
+  overflow: hidden;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  vertical-align: middle;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  font-size: 38rpx;
+  color: #2d3436;
+  font-weight: 500;
+}
+
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-search":"@vant/weapp/search/index",
+     "dishItem": "/components/dishItem/dishItem"
+  },
+  "navigationBarTitleText": "搜索结果"
+}

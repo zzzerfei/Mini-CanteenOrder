@@ -1,0 +1,14 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="mine">
+  <!-- 顶部用户信息 -->
+  <userinfo/>
+
+  <!-- 我的订单模块 -->
+  <serverInfo infos="{{myOrder}}" bindtap="mymenu"/>
+
+  <!-- 服务列表模块 -->
+  <serverInfo infos="{{helpfeed}}"/>
+  <serverInfo infos="{{custservice}}"/>
+  <serverInfo infos="{{activity}}"/>
+  <serverInfo infos="{{agreement}}"/>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/myCart/myCart",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/types/types",
+    "pages/order/order",
+    "pages/code/code",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFC300",
+    "navigationBarTitleText": "指尖食堂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#FFC300",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/img/tabbar/home.png",
+      "selectedIconPath": "assets/img/tabbar/home1.png"
+    },
+    {
+      "pagePath": "pages/myCart/myCart",
+      "text": "购物车",
+      "iconPath": "assets/img/tabbar/myCart.png",
+      "selectedIconPath": "assets/img/tabbar/myCart1.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "assets/img/tabbar/me.png",
+      "selectedIconPath": "assets/img/tabbar/me1.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

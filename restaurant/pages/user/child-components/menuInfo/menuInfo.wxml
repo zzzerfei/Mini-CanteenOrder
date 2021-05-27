@@ -1,0 +1,10 @@
+  <!-- 顶部用户信息模块 -->
+<view class="menu">
+    <!-- 选项 -->
+    <view class="menu-item">
+      <view class="menu-icon" bindtap="handle1">
+        <image src="/assets/img/userinfo/mymenu.png"/>我的订单
+        <!-- <text class="menu-text">我的订单</text>  -->
+      </view>
+    </view>
+  </view>

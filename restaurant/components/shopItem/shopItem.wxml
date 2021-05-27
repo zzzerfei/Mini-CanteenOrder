@@ -1,0 +1,29 @@
+<view class="shopItem" wx:for="{{shopcarinfo}}" wx:key="index" 
+wx:if="{{shopcarinfo[index].num >0}}">
+  <view class="left">
+    <image src="{{item.firstPicture}}"></image>
+  </view>
+
+  <view class="content">
+    <view class="title">
+      <text>{{item.dishName}}</text>
+    </view>
+    <view class="itemDetail">
+      <!-- <image src="/assets/img/shopcar/star.jpg"></image> -->
+      <!-- <text class="grade">{{item.grade}}</text> -->
+      <text class="monthsale">月售{{item.sales}}</text>
+    </view>
+    <view class="price" style="margin-top:10rpx">
+      <text>￥{{item.price}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <image class='decrease' hidden='{{item.num<=0}}' data-index='{{index}}' data-types='sub' catchtap='numchangeTap'       src='/assets/img/shopcar/sub.jpg' />
+    <text class='count'>{{item.num}}</text>
+    <image class='addCount' data-index='{{index}}' data-types='add' catchtap='numchangeTap' src='/assets/img/shopcar/add.jpg' />
+  </view>
+
+  <view class="delete">
+    <v-icon data-index="{{index}}" catchtap="delete" name="cross"></v-icon>
+  </view>
+</view>

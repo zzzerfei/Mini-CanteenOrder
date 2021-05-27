@@ -1,0 +1,59 @@
+<!--pages/code/code.wxml-->
+
+<view class="code">
+  <!-- 取餐码 -->
+  <view class="content">
+    <view>
+      <text>请关注您的取餐码</text>
+    </view>
+    <view>
+      <text class="codenumber">{{orderList.code}}</text>
+    </view>
+  </view>
+
+  <!-- 订单内容 -->
+  <view class="menus">
+    <view class="menuitem" wx:for="{{orderList.dishes}}" wx:key="index">
+      <text class="dishName">{{item.dishName}}</text>
+      <text class="dishPrice">￥{{item.price}}</text>
+      <text>x{{item.num}}</text>
+    </view>
+    <view class="menutotal">
+      <text>合计</text>
+      <text style="color: red">￥{{orderList.totalPrice}}</text>
+    </view>
+  </view>
+
+  <!-- 订单详情 -->
+  <view class="menudetail">
+    <view class="name">
+      <text>订单详情</text>
+    </view>
+    <view class="common">
+      <view class="inline">
+        <text>订单号：</text>
+        <text>{{orderList.orderId}}</text>
+      </view>
+      <view class="inline">
+        <text>下单时间：</text>
+        <text>{{orderList.createTime}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部 -->
+  <view class="bottom">
+    <view class="name">
+      <text>提醒</text>
+    </view>
+    <view class="bottom-common">
+      <view>可以在
+        <view id="buttomTxt" bindtap="toOrder">
+          个人中心-我的订单
+        </view>
+        中查看取餐码</view>
+    </view>
+  </view>
+</view>
+
+<view class="warning" bindtap="toIndex">再下一单</view>

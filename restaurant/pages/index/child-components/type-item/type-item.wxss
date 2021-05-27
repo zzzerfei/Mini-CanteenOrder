@@ -1,0 +1,27 @@
+.item{
+  width: 18vw;
+  height: 18vw;
+  /* background-color: #fff; */
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  border: #f5f6fa 1rpx solid;
+}
+
+
+.itemImg{
+  display: block;
+  margin: auto;
+  width: 10vw;
+  height: 10vw;
+}
+.item-txt{
+  width: 88%;
+  display: block;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}

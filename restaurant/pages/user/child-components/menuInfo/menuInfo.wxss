@@ -1,0 +1,26 @@
+.menu{
+  position: fixed;
+  top: 250rpx;
+  background:#fff;
+  width: 90%;
+  height: 160rpx;
+  border-radius: 25rpx;
+  border: 1px solid #FAC239;
+  left: 5%;
+}
+
+.menu-icon {
+  display: inline-block;
+  font-size: 28rpx;
+  width: 120rpx;
+  margin-top: 20rpx;
+  margin-left: 10%;
+  text-align: center;
+}
+.menu-text {
+  font-size: 30rpx;
+}
+.menu-icon image {
+  width: 100rpx;
+  height: 100rpx
+}

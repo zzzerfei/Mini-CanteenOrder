@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "v-button": "@vant/weapp/button/index",
+    "v-search":"@vant/weapp/search/index",
+    "v-icon": "@vant/weapp/icon/index",
+    "nav":"./child-components/nav/nav",
+    "type-item":"./child-components/type-item/type-item",
+    "dishItem": "/components/dishItem/dishItem"
+  },
+  "navigationStyle": "custom"
+}

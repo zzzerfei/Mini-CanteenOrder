@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "shopItem": "/components/shopItem/shopItem"
+  },
+  "navigationBarTitleText": "购物车"
+}

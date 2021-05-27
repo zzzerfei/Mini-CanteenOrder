@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "userinfo": "/pages/user/child-components/userinfo/userinfo",
+    "menuInfo": "/pages/user/child-components/menuInfo/menuInfo",
+    "serverInfo": "/pages/user/child-components/serverInfo/serverInfo"
+  },
+  "navigationBarTitleText": "我的"
+}

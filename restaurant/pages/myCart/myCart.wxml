@@ -1,0 +1,18 @@
+<block wx:if="{{totalprice != 0}}">
+  <scroll-view class="shopList">
+    <shopItem shopcarinfo="{{shopcarinfo}}" allPrice="{{totalprice}}" bind:totalbtn="totalprice" bind:delete="delete" />
+  </scroll-view>
+
+  <!-- 底部结算按钮 -->
+
+  <!-- <shopBtn/> -->
+  <view class="shopbtn">
+    <view class="btn-left">
+      <text>￥{{totalprice}}</text>
+    </view>
+    <view class="btn-right" bindtap="sentOrder">
+      <text>去结算</text>
+    </view>
+  </view>
+</block>
+<view class="warning" wx:else>亲，还没下单喔！o(*￣▽￣*)ブ</view>

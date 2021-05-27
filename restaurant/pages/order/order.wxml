@@ -1,0 +1,49 @@
+<!--pages/order/order.wxml-->
+<view class="orders" wx:if="{{orderList != ''}}">
+  <view class="order" wx:for="{{orderList}}" wx:key="index" data-index="{{index}}" catchtap="orderDetail">
+    <!-- 订单号 -->
+    <view class="orderId">
+      订单号： {{item.orderId}}
+    </view>
+    <!-- 时间 -->
+    <view class="time">
+      <text class="date">下单时间： {{item.createTime}}</text>
+    </view>
+    <!-- 中间内容 -->
+    <view class="content">
+      <!-- 点击进入详情 -->
+      <!-- 菜单 -->
+      <view class="menu">
+        <scroll-view scroll-x="true">
+          <view class="menu-item">
+            <view class="menu-info" wx:for="{{item.dishes}}" wx:key="index">
+              <image class="mypic" src="{{item.firstPicture}}"></image>
+              <view>
+                <text class="menu-name">{{item.dishName}}</text>x{{item.num}}
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <!-- 价格 -->
+    <view class="total">
+      <text class="totalNum">共{{item.totalNum}}件商品</text>
+      <text class="totalPrice">合计： ￥{{item.totalPrice}}</text>
+    </view>
+    <!-- 底部 -->
+    <view class="bottom">
+      <!-- 取餐码 -->
+      <view class="code">
+        取餐码： {{item.code}}
+      </view>
+      <!-- 按钮 -->
+      <view class="orderbtn">
+        <van-button size="small" catchtap="btnAgain">
+          <text class="again">再来一单</text>
+        </van-button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="warning" wx:else>亲，还没历史订单喔！o(*￣▽￣*)ブ</view>

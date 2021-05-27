@@ -1,0 +1,18 @@
+<view class="search-container">
+  <v-search placeholder="请输入关键词..." background="#FFC300" use-action-slot show-action input-align="center"
+    bind:search="onSearch" bind:change="searchChange" value="{{searchKey}}">
+    <view slot="action" bind:tap="onSearchClick"> <span class="search-btn">搜索</span> </view>
+  </v-search>
+</view>
+
+<block wx:if="{{searchInfo.length>0}}">
+  <scroll-view class="shopList">
+    <dishItem dishItem="{{searchInfo}}" bind:numchangeTap="numchangeTap"/>
+  </scroll-view>
+  <view class="bottom-warning">已经到达底部啦</view>
+</block>
+
+
+<view wx:else class="warning">搜索不到该关键字(⊙o⊙)</view>
+
+

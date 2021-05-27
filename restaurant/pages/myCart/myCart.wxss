@@ -1,0 +1,63 @@
+/* pages/shopcar/shopcar.wxss */
+page {
+  height: 100%;
+  background-color: #f5f6fa;
+}
+
+.shopList {
+  margin-bottom: 10vh;
+
+}
+
+.shopbtn {
+  position: fixed;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 10vh;
+}
+
+.btn-left {
+  flex-grow: 2;
+  background-color: #333;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  text-align: center;
+  line-height: 10vh;
+}
+.btn-left>text{
+  color: #fff;
+  font-weight: 500;
+  font-size: 48rpx;
+  font-family: '微软宋体';
+}
+
+.btn-right {
+  flex-grow: 1;
+  background: linear-gradient(0.25turn, #FACD91, #FAC239, #F59A23);
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  text-align: center;
+  line-height: 10vh;
+}
+.btn-right:active{
+  background: #F59A23;
+}
+
+.btn-right>text {
+  color: #333;
+  font-weight: 500;
+  font-size: 48rpx;
+}
+
+.warning{
+  text-align: center;
+  color:#737683 ;
+  font-family: SimSong;
+  font-size: 36rpx;
+  margin-top:30vh
+}

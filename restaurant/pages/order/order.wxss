@@ -1,0 +1,130 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #f5f6fa;
+}
+text{
+  font-family: '微软雅黑';
+}
+.orders{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.order {
+  margin-top: 20rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 6rpx #737683;
+}
+
+.order:active{
+  background-color: #f5f6fa;
+}
+
+/* 头部饭堂和时间信息 */
+
+/* 取餐码 */
+.orderId {
+  font-family: '微软雅黑';
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx #b2bec3 solid ;
+  color: #636e72;
+  font-size: 26rpx;
+}
+.date {
+  display: block;
+  margin: 20rpx 0 0;
+  font-size: 26rpx;
+  color: #b2bec3;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 菜单信息 */
+.menu {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.menu-item {
+  text-align: center;
+  display: flex;
+
+}
+.menu-info {
+  width: 177rpx;
+  margin: 0 10rpx;
+}
+.menu-item .mypic {
+  height: 126rpx;
+  width: 177rpx;
+  border-radius: 10rpx;
+}
+.menu-name{
+  display: inline-block;
+  width: 110rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-size: 24rpx;
+  color: #636e72;
+}
+
+/*  价格 */
+.total {
+  position: relative;
+  display: block;
+  /* width: 90vw; */
+  background-color: #f5f6fa;
+  padding: 20rpx 0;
+  margin:0 -20rpx;
+  text-align: center;
+  height: 40rpx;
+}
+.totalNum{
+  position: absolute;
+  left: 20rpx;
+  color:  #636e72;
+  font-size: 26rpx;
+  line-height: 40rpx ;
+}
+.totalPrice{
+  font-weight: bold;
+  position: absolute;
+  right: 20rpx;
+  color: #2d3436;
+}
+
+
+/* 底部 */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 按钮 */
+.orderbtn {
+  margin: 15rpx 0;
+  text-align : right;
+}
+.orderbtn .again {
+  color: #636e72;
+  font-size: 26rpx;
+}
+.code {
+  position: relative;
+  top: 20rpx;
+  font-family: '微软雅黑';
+  color: #636e72;
+  font-size: 26rpx;
+}
+.warning{
+  text-align: center;
+  color:#737683 ;
+  font-size: 36rpx;
+  margin-top:30vh
+}

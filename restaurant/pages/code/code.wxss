@@ -1,0 +1,109 @@
+/* pages/code/code.wxss */
+/* 这里是公共样式 */
+/* 所有标题 */
+page{
+  background-color: #f5f6fa;
+}
+text{
+  font-size: 32rpx;
+
+}
+.code {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 30rpx;
+}
+
+.name {
+  padding-left: 10rpx;
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  background-color: #fff;
+  color: #636e72;
+}
+.inline{
+  padding: 13rpx 0;
+}
+.common {
+  font-size: 26rpx;
+  padding: 26rpx 10rpx;
+}
+.inline>text {
+  color: #b2bec3;
+  font-size: 26rpx;
+}
+
+.content, .menus, .menudetail, .bottom {
+  border-radius: 15rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+}
+
+
+
+
+.content {
+  text-align: center;
+  padding: 60rpx;
+}
+
+.codenumber {
+  font-size: 100rpx;
+  font-weight: bold;
+}
+
+/* 订单 */
+.menus {
+  padding: 30rpx 20rpx;
+  font-size: 35rpx;
+}
+
+.menuitem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.dishName{
+  width: 270rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.dishPrice{
+
+  width: 150rpx;
+}
+.menutotal {
+  display: flex;
+  border-top: 1px solid #E0E0E0;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 0;
+}
+
+/* 订单详情 */
+.menudetail {
+  padding-top: 20rpx;
+}
+.detailitem {
+  font-size: 30rpx;
+}
+.bottom-common view{
+  display: inline-block;
+  padding: 13rpx 10rpx;
+  color: #b2bec3;
+  font-size: 26rpx;
+}
+
+#buttomTxt{
+  color: red;
+}
+
+.warning{
+  text-align: center;
+  color:#737683 ;
+  font-size: 26rpx;
+  margin:20rpx 0rpx;
+}

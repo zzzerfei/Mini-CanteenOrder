@@ -1,0 +1,33 @@
+<!------导航栏------>
+<view class="fix">
+  <nav color="#FFC300" style="height:{{navBarHeight}}">
+    <view class="nav">
+      <view class="dropdown-menu">
+        <picker bindchange="restaurantChange" value="{{restaurantIndex}}" range="{{restaurantName}}">
+          <view class="picker">
+            {{restaurantName[restaurantIndex]}}
+          </view>
+          <v-icon name="arrow-down" />
+        </picker>
+      </view>
+      <view class="title"> 指尖食堂 </view>
+    </view>
+  </nav>
+  <!------搜索栏---- -->
+  <view class="search-container">
+    <v-search placeholder="请输入关键词..." background="#FFC300" use-action-slot show-action input-align="center"
+      bind:search="onSearch" bind:change="searchChange" value="{{value}}">
+      <view slot="action" bind:tap="onSearchClick"> <span class="search-btn">搜索</span> </view>
+    </v-search>
+  </view>
+</view>
+<!------分类------>
+  <view class="type-container">
+      <type-item menu="{{menu}}" class="typeItem" bind:typeItemTap="typeItemTap"></type-item>
+  </view>
+<!-- 列表 -->
+<scroll-view scroll-y="true">
+<dishItem dishItem="{{dishItem}}" bind:numchangeTap="numchangeTap" ></dishItem>
+</scroll-view>
+
+<view class="bottom-warning">已经到达底部啦</view>

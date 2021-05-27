@@ -1,0 +1,29 @@
+<scroll-view scroll-y>
+  <view class="dishItem" wx:for="{{dishItem}}" wx:key="index">
+    <view class="img-container">
+      <image src="{{item.firstPicture}}" lazy-load="true"></image>
+    </view>
+    <view class="detail-container">
+      <view>
+        <text class="title">{{item.dishName}}</text>
+      </view>
+      <view>
+        <text class="monthsale">月售{{item.sales}}</text>
+      </view>
+      <view class="price">
+        <text>￥{{item.price}}</text>
+      </view>
+    </view>
+    <view class="order-container">
+      <view class="changeNumContainer" wx:if='{{item.num >0}}' data-index='{{index}}' data-types='sub'
+        catchtap='numchangeTap'>
+        <image class='decrease' src='/assets/img/shopcar/sub.jpg' />
+      </view>
+      <text class='count'>{{item.num}}</text>
+      <view class="changeNumContainer" data-index='{{index}}' data-types='add' catchtap='numchangeTap'>
+        <image class='addCount' 
+          src='/assets/img/shopcar/add.jpg' />
+      </view>
+    </view>
+  </view>
+</scroll-view>

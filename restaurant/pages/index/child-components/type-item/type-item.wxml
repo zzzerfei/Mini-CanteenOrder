@@ -1,0 +1,4 @@
+<view class="item" wx:for="{{menu}}" wx:key="index">
+    <image src="{{item.firstPicture}}" mode="aspectFit" class="itemImg" data-index='{{index}}' catchtap="typeItemTap" />
+    <text class="item-txt">{{item.windowName}}</text>
+</view>

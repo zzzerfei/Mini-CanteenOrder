@@ -1,0 +1,4 @@
+<scroll-view class="shopList">
+  <dishItem dishItem="{{dishItem}}" bind:numchangeTap="numchangeTap" />
+</scroll-view>
+<view class="bottom-warning">已经到达底部啦</view>

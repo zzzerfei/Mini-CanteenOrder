@@ -1,0 +1,15 @@
+body{
+  -webkit-overflow-scrolling: touch
+}
+page{
+  height: 100%;
+  overflow:scroll;
+  background-color: #f5f6fa;
+}
+.bottom-warning{
+  margin: 20rpx 0 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color:#737683 ;
+  font-family: SimSong;
+}
